@@ -87,7 +87,7 @@
                         <outlet property="recordButton" destination="ixk-3s-UWK" id="7X1-Ia-YVm"/>
                         <outlet property="recordInProgress" destination="Xgs-Lh-94r" id="uC7-n6-kWl"/>
                         <outlet property="stopButton" destination="mjc-VT-j3X" id="pRl-fy-8jg"/>
-                        <segue destination="7Pg-oE-E4o" kind="show" id="2A1-iO-NOs"/>
+                        <segue destination="7Pg-oE-E4o" kind="show" identifier="stopRecording" id="2A1-iO-NOs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

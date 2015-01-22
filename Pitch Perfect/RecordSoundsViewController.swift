@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class RecordSoundsViewController: UIViewController {
+class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     var audioRecorder:AVAudioRecorder!
     
@@ -52,13 +52,22 @@ class RecordSoundsViewController: UIViewController {
         let filePath = NSURL.fileURLWithPathComponents(pathArray)
         println(filePath)
         
+        // Setup audio session
         var session = AVAudioSession.sharedInstance()
         session.setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
         
+        // Initialize and prepare the recorder
         audioRecorder = AVAudioRecorder(URL: filePath, settings: nil, error: nil)
+        
+        // add delegate, so that we can use the function from audioRecorder
+        audioRecorder.delegate = self
+        
         audioRecorder.meteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
+    }
+    func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
+
     }
 
     @IBAction func stopRecording(sender: UIButton) {
