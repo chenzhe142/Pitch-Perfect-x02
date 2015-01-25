@@ -15,8 +15,6 @@
 		EA3A26CC1A70A639007B0626 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A26CB1A70A639007B0626 /* Pitch_PerfectTests.swift */; };
 		EA3F86C21A70CA65001689B9 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F86C11A70CA65001689B9 /* PlaySoundsViewController.swift */; };
 		EA4EE77E1A7406B700AF4482 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4EE77D1A7406B700AF4482 /* RecordedAudio.swift */; };
-		EA7797A31A718D53001EE999 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7797A21A718D53001EE999 /* movie_quote.mp3 */; };
-		EA976E771A74583B0087808B /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA976E761A74583B0087808B /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,6 @@
 		EA3A26CB1A70A639007B0626 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
 		EA3F86C11A70CA65001689B9 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		EA4EE77D1A7406B700AF4482 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
-		EA7797A21A718D53001EE999 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
-		EA976E761A74583B0087808B /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +96,6 @@
 		EA3A26B31A70A639007B0626 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA7797A21A718D53001EE999 /* movie_quote.mp3 */,
-				EA976E761A74583B0087808B /* test.m4a */,
 				EA3A26B41A70A639007B0626 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -206,9 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3A26BB1A70A639007B0626 /* Main.storyboard in Resources */,
-				EA976E771A74583B0087808B /* test.m4a in Resources */,
 				EA3A26C01A70A639007B0626 /* LaunchScreen.xib in Resources */,
-				EA7797A31A718D53001EE999 /* movie_quote.mp3 in Resources */,
 				EA3A26BD1A70A639007B0626 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
