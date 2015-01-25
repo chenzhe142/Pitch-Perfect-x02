@@ -1,4 +1,4 @@
- Pitch Perfect
+ Pitch Perfect (finished)
 ================
 Udacity iOS course project, with Swift
 
