@@ -14,7 +14,9 @@
 		EA3A26C01A70A639007B0626 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3A26BE1A70A639007B0626 /* LaunchScreen.xib */; };
 		EA3A26CC1A70A639007B0626 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A26CB1A70A639007B0626 /* Pitch_PerfectTests.swift */; };
 		EA3F86C21A70CA65001689B9 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F86C11A70CA65001689B9 /* PlaySoundsViewController.swift */; };
+		EA4EE77E1A7406B700AF4482 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4EE77D1A7406B700AF4482 /* RecordedAudio.swift */; };
 		EA7797A31A718D53001EE999 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7797A21A718D53001EE999 /* movie_quote.mp3 */; };
+		EA976E771A74583B0087808B /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA976E761A74583B0087808B /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,9 @@
 		EA3A26CA1A70A639007B0626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA3A26CB1A70A639007B0626 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
 		EA3F86C11A70CA65001689B9 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		EA4EE77D1A7406B700AF4482 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		EA7797A21A718D53001EE999 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
+		EA976E761A74583B0087808B /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +87,9 @@
 			children = (
 				EA3A26B51A70A639007B0626 /* AppDelegate.swift */,
 				EA3A26B71A70A639007B0626 /* RecordSoundsViewController.swift */,
-				EA3A26B91A70A639007B0626 /* Main.storyboard */,
 				EA3F86C11A70CA65001689B9 /* PlaySoundsViewController.swift */,
+				EA4EE77D1A7406B700AF4482 /* RecordedAudio.swift */,
+				EA3A26B91A70A639007B0626 /* Main.storyboard */,
 				EA3A26BC1A70A639007B0626 /* Images.xcassets */,
 				EA3A26BE1A70A639007B0626 /* LaunchScreen.xib */,
 				EA3A26B31A70A639007B0626 /* Supporting Files */,
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7797A21A718D53001EE999 /* movie_quote.mp3 */,
+				EA976E761A74583B0087808B /* test.m4a */,
 				EA3A26B41A70A639007B0626 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -167,6 +173,7 @@
 				TargetAttributes = {
 					EA3A26AF1A70A639007B0626 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7KVC28S6XS;
 					};
 					EA3A26C41A70A639007B0626 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -199,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3A26BB1A70A639007B0626 /* Main.storyboard in Resources */,
+				EA976E771A74583B0087808B /* test.m4a in Resources */,
 				EA3A26C01A70A639007B0626 /* LaunchScreen.xib in Resources */,
 				EA7797A31A718D53001EE999 /* movie_quote.mp3 in Resources */,
 				EA3A26BD1A70A639007B0626 /* Images.xcassets in Resources */,
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3A26B81A70A639007B0626 /* RecordSoundsViewController.swift in Sources */,
+				EA4EE77E1A7406B700AF4482 /* RecordedAudio.swift in Sources */,
 				EA3F86C21A70CA65001689B9 /* PlaySoundsViewController.swift in Sources */,
 				EA3A26B61A70A639007B0626 /* AppDelegate.swift in Sources */,
 			);
@@ -344,9 +353,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Pitch Perfect/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,9 +367,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Pitch Perfect/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

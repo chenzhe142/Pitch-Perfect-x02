@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="isl-j6-Lg1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -111,20 +112,26 @@
                                 <state key="normal" image="slowButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="SlowSoundPlay:" destination="7Pg-oE-E4o" eventType="touchUpInside" id="a35-Wn-buA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rU-W6-Zpm">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="fastButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="QuickSoundPlay:" destination="7Pg-oE-E4o" eventType="touchUpInside" id="GCT-lb-tNX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7PR-OI-SBo" firstAttribute="leading" secondItem="HeX-Cd-V8a" secondAttribute="leadingMargin" constant="40" id="75S-JO-ZwY"/>
+                            <constraint firstItem="7PR-OI-SBo" firstAttribute="leading" secondItem="HeX-Cd-V8a" secondAttribute="leadingMargin" constant="20" id="75S-JO-ZwY"/>
                             <constraint firstItem="0rU-W6-Zpm" firstAttribute="top" secondItem="10V-NK-Agp" secondAttribute="bottom" constant="50" id="GhJ-6L-DiV"/>
                             <constraint firstItem="7PR-OI-SBo" firstAttribute="top" secondItem="10V-NK-Agp" secondAttribute="bottom" constant="50" id="c74-46-pCD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0rU-W6-Zpm" secondAttribute="trailing" constant="40" id="nss-mf-217"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0rU-W6-Zpm" secondAttribute="trailing" constant="20" id="nss-mf-217"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -132,10 +139,10 @@
                                 <exclude reference="0rU-W6-Zpm"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="75S-JO-ZwY"/>
-                                <exclude reference="c74-46-pCD"/>
                                 <exclude reference="GhJ-6L-DiV"/>
                                 <exclude reference="nss-mf-217"/>
+                                <exclude reference="75S-JO-ZwY"/>
+                                <exclude reference="c74-46-pCD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -144,10 +151,10 @@
                                 <include reference="0rU-W6-Zpm"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="75S-JO-ZwY"/>
-                                <include reference="c74-46-pCD"/>
                                 <include reference="GhJ-6L-DiV"/>
                                 <include reference="nss-mf-217"/>
+                                <include reference="75S-JO-ZwY"/>
+                                <include reference="c74-46-pCD"/>
                             </mask>
                         </variation>
                     </view>
